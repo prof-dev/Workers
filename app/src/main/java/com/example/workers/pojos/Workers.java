@@ -9,6 +9,8 @@ public class Workers {
     private String name;
     @JsonProperty("PHONE")
     private String phone;
+    @JsonProperty("PASSWORD")
+    private String password;
     @JsonProperty("SHOPID")
     private int shop_id;
     @JsonProperty("ISACTIVE")

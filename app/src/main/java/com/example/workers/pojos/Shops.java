@@ -6,14 +6,14 @@ public class Shops {
 
     @JsonProperty("ID")
     private int id;
-    @JsonProperty("ID")
+    @JsonProperty("NAME")
     private String name;
-    @JsonProperty("ID")
+    @JsonProperty("ADDRSS")
     private String address;
-    @JsonProperty("ID")
+    @JsonProperty("MANAGER")
     private int manager_id;
-    @JsonProperty("ID")
+    @JsonProperty("ISACTIVE")
     private int is_active;
-    @JsonProperty("ID")
+    @JsonProperty("ACTIVATIONDATE")
     private Date activation_date;
 }

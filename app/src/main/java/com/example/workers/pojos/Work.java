@@ -8,12 +8,12 @@ import java.util.Date;
 public class Work {
     @JsonProperty("ID")
     private int id;
-    @JsonProperty("ID")
+    @JsonProperty("WORKERID")
     private int worker_id;
-    @JsonProperty("ID")
+    @JsonProperty("SHOPID")
     private int shop_id;
-    @JsonProperty("ID")
+    @JsonProperty("PRICE")
     private BigDecimal price;
-    @JsonProperty("ID")
+    @JsonProperty("WORKTIME")
     private Date time;
 }

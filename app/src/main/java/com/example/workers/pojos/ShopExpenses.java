@@ -7,12 +7,12 @@ import java.math.BigDecimal;
 public class ShopExpenses {
     @JsonProperty("ID")
     private int id;
-    @JsonProperty("workerid")
+    @JsonProperty("WORKERID")
     private int worker_id;
-    @JsonProperty("ID")
+    @JsonProperty("EXPENSEID")
     private int expense_id;
-    @JsonProperty("ID")
+    @JsonProperty("TIME")
     private BigDecimal time;
-    @JsonProperty("ID")
+    @JsonProperty("SHOPID")
     private int shop_id;
 }
