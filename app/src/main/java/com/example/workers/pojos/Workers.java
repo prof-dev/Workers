@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Workers {
     @JsonProperty("ID")
     private int id;
-    @JsonProperty("ID")
+    @JsonProperty("Name")
     private String name;
-    @JsonProperty("ID")
+    @JsonProperty("PHONE")
     private String phone;
-    @JsonProperty("ID")
+    @JsonProperty("SHOPID")
     private int shop_id;
-    @JsonProperty("ID")
+    @JsonProperty("ISACTIVE")
     private int is_active;
 
 }
