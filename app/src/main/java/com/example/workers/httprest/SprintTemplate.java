@@ -8,6 +8,7 @@ import com.example.workers.pojos.Workers;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
@@ -36,5 +37,12 @@ public class SprintTemplate extends AsyncTask<String,Void, ResponseEntity<Worker
             return null;
 
         }
+    }
+
+    @Override
+    protected void onPostExecute(ResponseEntity<Workers> workersResponseEntity) {
+        super.onPostExecute(workersResponseEntity);
+        HttpStatus status=workersResponseEntity.getStatusCode();
+        Workers worker=workersResponseEntity.getBody();
     }
 }
